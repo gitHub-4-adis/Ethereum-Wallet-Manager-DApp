@@ -1,0 +1,70 @@
+*{
+    /* background-color: blue; */
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 100vw;
+    height: 95vh;
+}
+
+.miniContainer{
+    text-align: center;
+    font-size: 40px;
+}
+
+.pic{
+    font-size: 130px;
+}
+
+.input{
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 20px;
+    color: black;
+    border: 2px solid blue;
+    border-radius: 50px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    /* background-color: yellow; */
+    width: 320px;
+}
+
+#withDrawA, #withDrawB, #depositA, #depositB, #deductA, #deductB{
+    border-radius: 50px;
+    width: 150px;
+    padding: 8px;
+    margin: 12px 0px 0px 0px;
+    color: white;
+    font-weight: bold;
+}
+
+#withDrawA:hover, #withDrawB:hover, #depositA:hover, #depositB:hover, #deductA, #deductB{
+    cursor: pointer;
+}
+
+#depositA, #depositB{
+    background-color:mediumseagreen;
+    border:2px solid mediumseagreen;
+}
+
+#deductA, #deductB{
+    background-color:crimson;
+    border:2px solid crimson;
+}
+
+#withDrawA, #withDrawB{
+    background-color:darkblue;
+    border:2px solid darkblue;
+}
+

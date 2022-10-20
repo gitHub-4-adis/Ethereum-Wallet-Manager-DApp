@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet - To - Wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+
+        <div class="miniContainer">
+            <p id="statementA">Wallet-A Balance</p>
+            <p id="amtA"></p>
+
+            
+            <div class="pic">💳</div>
+            
+            <input type="text" class="input" id="inputA" placeholder="Enter Amount">
+            
+            <div class="buttons">
+                <button id="withDrawA" onclick="transfer('A')">Transfer To B</button>
+                <button id="depositA" onclick="deposit('A')">Deposit To A</button>
+                <button id="deductA" onclick="deduct('A')">Deduct From A</button>
+            </div>
+        </div>
+
+            
+        <div class="miniContainer">
+            <p id="statementB">Wallet-B Balance</p>
+            <p id="amtB"></p>
+
+            <div class="pic">💸</div>
+                
+            <input type="text" class="input" id="inputB" placeholder="Enter Amount">
+
+            <div class="buttons">
+                <button id="withDrawB" onclick="transfer('B')">Transfer To A</button>
+                <button id="depositB" onclick="deposit('B')">Deposit To B</button>
+                <button id="deductB" onclick="deduct('B')">Deduct From B</button>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>
